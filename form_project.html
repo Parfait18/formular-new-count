@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' width="device-width, initial-scale=1">
+        <link rel="stylesheet" href="form_project.css">
+        <title> Formualaire</title>
+    </head>
+    <body>
+        
+          
+        <div class="form_div">
+            <form>
+                <div class="main1">
+                    <div class="left_block">
+                       
+                            <div class="input_div popup">
+                                 <label class="label_cl" for="name"> Nom</label>
+                                 
+                                 <input type="text" name="name" id="name" required/>
+                            </div>
+                           
+                            <div class="input_div popup">
+                                 <label class="label_cl" for="surname"> Prénom</label>
+                               
+                                 <input type="text" name="surname"  id="surname" required/>
+                            </div>
+                           
+                            <div class="input_div popup">
+                                 <label class="label_cl" for="password"> Mot de passe</label>
+                            
+                                <input type="password"   name="password" id="password" required/>
+                            </div>  
+                        
+                    </div>
+                    <div class="right_block">
+                        <label class="label_date"> Date de naissance</label>
+                        <input type="date" class="input_date" name="date" id="date"/>
+                        <div class="rd_block">
+                            <label class="label_cl">Votre tranche d'âge</label>
+                            <div class="input_rd_div">
+                                <input  class="input_rd"" type="radio" name="age" id="child" value="children"/>
+                                <label for="child" class="label_rd"> Enfant </label>
+                            </div>
+                            <div class="input_rd_div" >
+                                <input  class="input_rd" type="radio" name="age" id="teen" value="teenager"/>
+                                <label for="teen" class="label_rd"> Adolescent </label>
+                           </div>
+                           <div  class="input_rd_div">
+                                 <input  class="input_rd" type="radio" name="age" id="adult" value="adult"/>
+                                 <label for="adult"class="label_rd"> Adult </label>                  
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit_div popup">
+                   
+                        <span class="popuptext" id="myPopup">Veuillez remplir tous les champs obligatoires</span>
+                      
+                    <input type="button" onclick="save()" class="submit " value="Envoyer" />
+                    
+                 </div>
+
+                <div class="confirm_div">
+                    <input type="checkbox" name="accept"  class="confirm" checked />
+                     <label for="accept" class="confirm_lb">j'accepte et certifie les informations personnelles ci-dessus</label>
+                </div> 
+              
+            </form>     
+        </div>
+    </body>
+    <script src="form_project.js"></script>
+</html>
